@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>MayLib</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="style/style.css">
+      <link rel="stylesheet" href="style/search-book.css">
+      <link rel="stylesheet" href="style/style-basic.css">
+    </head>
+    <body>
+
+  <!-- START : HEADER -->
+  <header class="h-100 w-100" style="box-sizing: border-box; background-color: #141432">
+    <div class="header-4-3 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif;">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a href="search-book.html">
+          <img style="margin-right:0.75rem"
+            src="images/MayLib.png" alt="">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="modal" data-bs-target="#targetModal-item">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog"
+          aria-labelledby="targetModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content border-0" style="background-color: #141432;">
+              <div class="modal-header border-0" style="padding:	2rem; padding-bottom: 0;">
+                <a class="modal-title" id="targetModalLabel">
+                  <img style="margin-top:0.5rem"
+                    src="http://api.elements.buildwithangga.com/storage/files/2/assets/Header/Header2/Header-2-3.png"
+                    alt="">
+                </a>
+                <button type="button" class="close btn-close text-white" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+              </div>
+              <div class="modal-body" style="padding:	2rem; padding-top: 0; padding-bottom: 0;">
+                <ul class="navbar-nav responsive me-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="search-book.html" style="color: #E7E7E8;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#searchBook">Search Book</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-footer border-0 gap-3" style="padding:	2rem; padding-top: 0.75rem">
+                <a href="profile.html" class="btn btn-default btn-no-fill">Profile</a>
+                <a href="dashboard.html" class="btn btn-fill border-0 text-white">Dashboard</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="search-book.html" style="color: #E7E7E8;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#searchBook">Search Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About Us</a>
+            </li>
+          </ul>
+          <div class="gap-3">
+            <a href="profile.html" class="btn btn-default btn-no-fill">Profile</a>
+            <a href="dashboard.html" class="btn btn-fill text-white border-0">Dashboard</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-xxl container-search d-flex justify-content-center" id="searchBook">
+        <form action="" >
+          <div class="d-flex input-form justify-content-between">
+            <input class="form-control" type="text" placeholder="Masukan Nama Buku"/>
+            <button type="submit" class="form-control">Cari Buku</button>  
+          </div>
+          <div class="d-block d-md-flex justify-content-between align-items-center mt-4">
+            <span class="d-block d-md-inline text-white">Filter : </span>
+            <div class="d-flex justify-content-between">
+              <input class="d-inline input-field border-0 form-control" list="vocational" placeholder="Vocational" />
+              <datalist id="vocational">
+                <option value="TKJ">
+                <option value="MULTIMEDIA">
+                <option value="AKL">
+                <option value="OTKP">
+                <option value="OTKP">
+              </datalist>
+              <input class="d-inline input-field border-0 form-control" list="vocational" placeholder="Vocational"/>
+                <datalist id="vocational">
+                  <option value="TKJ">
+                  <option value="MULTIMEDIA">
+                  <option value="AKL">
+                  <option value="OTKP">
+                  <option value="OTKP">
+                </datalist>
+              <input class="d-inline input-field border-0 form-control" list="vocational" placeholder="Vocational"/>
+                <datalist id="vocational">
+                  <option value="TKJ">
+                  <option value="MULTIMEDIA">
+                  <option value="AKL">
+                  <option value="OTKP">
+                  <option value="OTKP">
+                </datalist>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <!-- END : HEADER -->
+
+
+
+  <!-- START : LIST BOOK -->
+  <section class="list-book">
+    <div class="container pb-4 px-4">
+      <div class="row gap-lg-3 gap-1 justify-content-around">
+          
+        <div class="col-6 col-md-3 shadow-sm p-lg-4 p-2" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)" style="max-width: 250px;">
+            <img src="images/data-buku/dasardesaingrafis.jpg"
+            alt="taxes" class="img-fluid">
+              <h6 class="fw-bold mt-4 mb-1 cl-blue">
+                  Dasar Desain Grafis 
+              </h6>
+              <p class="card-body p-0">
+                  Buku Kujuruan 10 TKJ dan MULTIMEDIA
+              </p>
+              <a href="detail-book.html" class="d-block btn btn-detail text-white mt-4">Detail Book</a>
+        </div>
+        <div class="col-6 col-md-3 shadow-sm p-lg-4 p-2" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)" style="max-width: 250px;">
+          <img src="images/data-buku/dasardesaingrafis.jpg"
+          alt="taxes" class="img-fluid">
+            <h6 class="fw-bold mt-4 mb-1 cl-blue">
+                Dasar Desain Grafis 
+            </h6>
+            <p class="card-body p-0">
+                Buku Kujuruan 10 TKJ dan MULTIMEDIA
+            </p>
+            <a href="detail-book.html" class="d-block btn btn-detail text-white mt-4">Detail Book</a>
+        </div>
+        <div class="col-6 col-md-3 shadow-sm p-lg-4 p-2" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)" style="max-width: 250px;">
+          <img src="images/data-buku/dasardesaingrafis.jpg"
+          alt="taxes" class="img-fluid">
+            <h6 class="fw-bold mt-4 mb-1 cl-blue">
+                Dasar Desain Grafis 
+            </h6>
+            <p class="card-body p-0">
+                Buku Kujuruan 10 TKJ dan MULTIMEDIA
+            </p>
+            <a href="detail-book.html" class="d-block btn btn-detail text-white mt-4">Detail Book</a>
+        </div>
+        <div class="col-6 col-md-3 shadow-sm p-lg-4 p-2" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)" style="max-width: 250px;">
+          <img src="images/data-buku/dasardesaingrafis.jpg"
+          alt="taxes" class="img-fluid">
+            <h6 class="fw-bold mt-4 mb-1 cl-blue">
+                Dasar Desain Grafis 
+            </h6>
+            <p class="card-body p-0">
+                Buku Kujuruan 10 TKJ dan MULTIMEDIA
+            </p>
+            <a href="detail-book.html" class="d-block btn btn-detail text-white mt-4">Detail Book</a>
+      </div>
+        <div class="col-6 col-md-3 shadow-sm p-lg-4 p-2" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)" style="max-width: 250px;">
+          <img src="images/data-buku/dasardesaingrafis.jpg"
+          alt="taxes" class="img-fluid">
+          <h6 class="fw-bold mt-4 mb-1 cl-blue">
+              Dasar Desain Grafis 
+          </h6>
+          <p class="card-body p-0">
+              Buku Kujuruan 10 TKJ dan MULTIMEDIA
+          </p>
+          <a href="detail-book.html" class="d-block btn btn-detail text-white mt-4">Detail Book</a>
+        </div>
+
+
+      </div>
+  </div>
+
+  </section>
+
+
+  <!-- START : FOOTER -->
+  <footer class="page-footer font-small blue border-top">
+      <div class="container text-md-left">
+          <div class="row">
+              <div class="col-md-6 mt-md-0 mt-3 address">
+                  <img src="images/MayLib-black.png"
+                      alt="logo" class="img-fluid mb-2">
+                  <p>Jl. Kh. Wahid Hasyim No.76, <br> Cirebon, Jawa Barat 45183</p>
+                  <div class="mt-md-5 social-media">
+                      <a href="#">
+                          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_linkedin.svg"
+                              alt="linkedin" class="img-fluid">
+                      </a>
+                      <a href="#">
+                          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_facebook.svg"
+                              alt="facebook" class="img-fluid">
+                      </a>
+                      <a href="#">
+                          <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-workly/bi_twitter.svg"
+                              alt="twitter" class="img-fluid">
+                      </a>
+                  </div>
+              </div>
+              <hr class="clearfix w-100 d-md-none pb-3">
+              <div class="row col-md-6 nav-footer">
+                  <div class="col-md-4 mb-md-0 mb-3">
+                      <p>
+                          Our Features
+                      </p>
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="#!">Adaptive</a>
+                          </li>
+                          <li>
+                              <a href="#!">Faster</a>
+                          </li>
+                          <li>
+                              <a href="#!">Integrated</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 mb-md-0 mb-3">
+                      <p>
+                          Company
+                      </p>
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="#!">About Us</a>
+                          </li>
+                          <li>
+                              <a href="#!">Blog</a>
+                          </li>
+                          <li>
+                              <a href="#!">Join Us</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-md-4 mb-md-0 mb-3">
+                      <p>
+                          Help
+                      </p>
+                      <ul class="list-unstyled">
+                          <li>
+                              <a href="#!">API Documentation</a>
+                          </li>
+                          <li>
+                              <a href="#!">System Status</a>
+                          </li>
+                          <li>
+                              <a href="#!">Talk to Support</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="copyright row d-flex justify-content-center mx-0">
+          <p class="text-center">
+              2021 MayLib - SKENSALA | All rights reserved.
+          </p>
+      </div>
+  </footer> 
+  <!-- END : FOOTER -->
+
+
+
+  
+    <script>
+        function coloringgoals(x) {
+            x.classList.add('bg-silver');
+            x.classList.add('rounded-24');
+            x.classList.add('shadow');
+            x.classList.remove('shadow-sm');
+
+        }
+
+        function normalgoals(x) {
+            x.classList.remove('bg-silver');
+            x.classList.remove('rounded-24');
+            x.classList.remove('shadow');
+            x.classList.add('shadow-sm');
+
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>

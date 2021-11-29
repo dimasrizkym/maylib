@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>GetShayna by BuildWith Angga</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    <body>
+       <section class="choose">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+        * {
+            font-family: 'Inter', sans-serif !important;
+        }
+
+        body .choose {
+            background-color: #F9FCFC;
+        }
+
+        body .choose h1 {
+            color: #232323;
+            font-weight: 700 !important;
+        }
+
+        body .choose p {
+            color: #879FB0;
+        }
+
+        @media screen and (min-width: 768px) {
+            body .choose h1 {
+                font-size: 60px !important;
+            }
+        }
+
+        body .cl-blue {
+            color: #0F52BA !important;
+        }
+    </style>
+    <div class="container pb-4 px-4">
+        <div class="row text-center d-block pt-5 pb-md-4">
+            <h1 class="my-3">
+                Why choose us
+            </h1>
+            <p>
+                House is commited to helping its clients to reach their goals.
+            </p>
+        </div>
+        <div class="row py-5">
+            <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes.svg"
+                    alt="taxes" class="img-fluid">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/taxes-color.svg"
+                    alt="taxes" class="img-fluid" style="display: none;">
+                <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                    Tax Advantage
+                </p>
+                <p class="mb-0">
+                    Tax advantage which applies to certain accounts or investments.
+                </p>
+            </div>
+            <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user.svg"
+                    alt="user" class="img-fluid">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/user-color.svg"
+                    alt="user" class="img-fluid" style="display: none;">
+                <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                    Property Insurance
+                </p>
+                <p class="mb-0">
+                    A series of policies that offer either property protection of liability coverage.
+                </p>
+            </div>
+            <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount.svg"
+                    alt="discount" class="img-fluid">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/discount-color.svg"
+                    alt="user" class="img-fluid" style="display: none;">
+                <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                    Lowest Commision
+                </p>
+                <p class="mb-0">
+                    No longer have to negatiate commissions and haggle with other agents.
+                </p>
+            </div>
+            <div class="col-md-3 p-4" onmouseover="coloringgoals(this)" onmouseout="normalgoals(this)">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar.svg"
+                    alt="calendar" class="img-fluid">
+                <img src="https://api.elements.buildwithangga.com/storage/files/2/assets/Content/Content-House/calendar-color.svg"
+                    alt="user" class="img-fluid" style="display: none;">
+                <p class="font-weight-bold mt-4 mb-1 cl-blue">
+                    House Now
+                </p>
+                <p class="mb-0">
+                    Easy booking system for a host. Try our innovative model.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function coloringgoals(x) {
+            x.classList.add('bg-white');
+            x.classList.add('rounded-24');
+            x.childNodes[1].style.display = "none";
+            x.childNodes[3].style.display = "block";
+        }
+
+        function normalgoals(x) {
+            x.classList.remove('bg-white');
+            x.classList.remove('rounded-24');
+            x.childNodes[1].style.display = "block";
+            x.childNodes[3].style.display = "none";
+        }
+    </script>
+</section> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+  </html>
