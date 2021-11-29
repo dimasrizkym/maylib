@@ -47,7 +47,7 @@
   outline: none !important;
 }
 
-.header-4-3 .btn-fill {
+.btn-fill {
   font: 600 18px / normal Poppins, sans-serif;
   background-color: #524EEE;
   border-radius: 12px;
@@ -56,7 +56,7 @@
   transition: 0.3s;
 }
 
-.header-4-3 .btn-fill:hover {
+.btn-fill:hover {
   --tw-shadow: inset 0 0px 25px 0 rgba(20, 20, 50, 0.7);
   -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
           box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
